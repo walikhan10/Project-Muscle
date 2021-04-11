@@ -1,0 +1,12 @@
+.all > div {
+  background-color: #92a8d1;
+}
+
+.navbar-item {
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
