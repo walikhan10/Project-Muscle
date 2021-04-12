@@ -1,3 +1,9 @@
+html {
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+}
+
 .navbar-item {
 }
 
@@ -6,11 +12,28 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  bottom: -2em;
 }
 
-/* #frame {
+#frame {
   position: relative;
-  top: -750px;
+  top: -70px;
   text-align: center;
   font-size: 18px;
-} */
+}
+
+.navbar {
+  background-color: lightcoral;
+  color: black;
+  height: 80px;
+  padding-left: 30px;
+  font: "roboto";
+}
+.navbar-menu {
+  color: white;
+}
+
+#logo {
+  position: relative;
+  top: 16px;
+}
