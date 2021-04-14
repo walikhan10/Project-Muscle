@@ -3,8 +3,35 @@ html {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     "Helvetica", "Arial", sans-serif;
 }
+.theme-light {
+  --primary-color: #23d160;
+  --secondary-color: white;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
 
+.theme-dark {
+  --primary-color: black;
+  --secondary-color: white;
+  --font-color: #424242;
+  --bg-color: #fff;
+  --heading-color: #292922;
+}
+body {
+  background: var(--primary-color);
+  transition: background 2s;
+}
+.button {
+  position: sticky;
+  top: 16px;
+}
 .navbar-item {
+  color: var(--secondary-color);
+}
+
+.navbar-link {
+  color: var(--secondary-color);
 }
 
 .image {
@@ -13,27 +40,32 @@ html {
   margin-right: auto;
   position: relative;
   bottom: -2em;
+  right: 300px;
 }
 
 #frame {
   position: relative;
-  top: -70px;
+  bottom: 150px;
+
   text-align: center;
   font-size: 18px;
+  font-style: italic;
+  color: var(--bg-color);
 }
 
 .navbar {
-  background-color: lightcoral;
-  color: black;
+  color: darkgreen;
   height: 80px;
   padding-left: 30px;
   font: "roboto";
 }
 .navbar-menu {
-  color: white;
+  color: var(--bg-color);
 }
 
 #logo {
   position: relative;
   top: 16px;
 }
+
+/*slider switch css */

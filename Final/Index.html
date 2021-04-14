@@ -13,88 +13,104 @@
    
   </head>
   </head>
-  <body class= "all">
+  <body>
 
 
-
- 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <a href="index.html">
-            <img src="logo2.png" href= "index.html" width="200"  id = "logo">  
-          </a>
-
-        <div class="navbar-brand">
-          
-          
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-      
-            <a class="navbar-item" style="color:black">
-              My Workouts
-            </a>
-
-            <a href="recipe/recipe.html" class="navbar-item" style="color:black">
-              Recipe
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable" style= "color:black">
-              <a class="navbar-link" style="color:black">
-                More
+    <section class="hero">
+      <!-- Hero head: will stick at the top -->
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="logo3.png" href= "index.html" alt="Logo">
               </a>
-      
-            <div class="navbar-dropdown" style="color:black";>
-                <a class="navbar-item">
-                  About
+              <span class="navbar-burger" data-target="navbarMenuHeroC">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </div>
+            <div id="navbarMenuHeroC" class="navbar-menu">
+              <div class="navbar-end">
+
+                <button class = "navbar-item button is-ghost" id="switch" onclick="toggleTheme()">🌙</button>
+
+                <a class="navbar-item is-hoverable">
+                  <strong> Workouts </strong>
+                </a>
+                <a class="navbar-item" href="recipe/recipe.html">
+                  <Strong>Recipe</Strong>
                 </a>
                 
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                
+                <div class="navbar-item has-dropdown is-hoverable"  >
+                  <a class="navbar-link" >
+                   <strong>More</strong> 
+                  </a>
+          
+                  <div class="navbar-dropdown" >
+                    <a class="navbar-item" style=" color: black;">
+                      About
+                    </a>
+                    <a class="navbar-item" style=" color: black;">
+                      Jobs
+                    </a>
+                    <a class="navbar-item" style=" color: black;">
+                      Contact
+                    </a>
+                    
+                  </div>
+                </div>
+
+
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-white" >
+                          <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-white">
+                          <strong> Log in </strong>
+                        </a>
+                      </div>
+                    </div>
+
+
               </div>
             </div>
           </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-dark" style="background-color:#ed1b34">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      
-
-      <img class = "image" src="body6.png" usemap="#image_map" >
+        </header>
+      </div>
+    
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+              
+ <img class = "image" src="body7.png" usemap="#image_map" >
 <map name="image_map" >
   <area alt="left" id ="male" title="left-chest" href= "Test.html" coords="189,144,174,136,160,141,148,153,140,165,133,179,149,193,162,198,180,199,192,197,205,193,205,171,201,153"  shape="poly" data-maphilight='{"strokeColor":"ed1b34","strokeWidth":5,"fillColor":"f08080","fillOpacity":0.6}' >
   <area alt="right" id ="male" title="right-chest" href= "Test.html" coords="230,141,220,147,215,156,212,172,211,193,229,200,244,201,255,199,267,194,280,184,282,175,274,161,264,150,256,140,244,136" shape="poly" data-maphilight='{"strokeColor":"ed1b34","strokeWidth":5,"fillColor":"f08080","fillOpacity":0.6}' >
 </map>
 </map>
+</div>        
 
-
-   
-
-    <div id= "frame">
-
+<div class = "has-text-centered" id= "frame"></div>
+        
       
+    
 
-    </div>
+
+
+
+
+
+
+
+      <!-- Hero footer: will stick at the bottom -->
+     
+    </section>
+
+    
 
     
   </body>
