@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "ajax": "^0.0.4",
     "axios": "^0.21.1",
     "bulma": "^0.9.2",
     "jquery": "^3.6.0",

@@ -68,4 +68,39 @@ body {
   top: 16px;
 }
 
-/*slider switch css */
+#workouts {
+  text-align: center;
+  color: white;
+}
+
+.square {
+  height: 300px;
+  width: 400px;
+  background-color: #555;
+  position: absolute;
+  bottom: 300px;
+  right: 840px;
+  border-radius: 25px;
+  background-color: #23d160;
+  box-shadow: 5px 5px 20px -4px #000000;
+  color: black;
+}
+
+.square2 {
+  height: 300px;
+  width: 400px;
+  background-color: #555;
+  position: absolute;
+  bottom: 300px;
+  right: 200px;
+  border-radius: 25px;
+  background-color: #23d160;
+  box-shadow: 5px 5px 20px -4px #000000;
+}
+
+#test1 {
+  position: relative;
+  top: 110px;
+  font-size: 50px;
+  color: black;
+}
