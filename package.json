@@ -4,6 +4,7 @@
     "axios": "^0.21.1",
     "bulma": "^0.9.2",
     "jquery": "^3.6.0",
+    "jquery-typeahead": "^2.11.1",
     "maphilight": "^1.4.0"
   }
 }

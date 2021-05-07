@@ -9,90 +9,111 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>
     <script src="app.js"></script>
+    <script src="auth.js"></script>
     
    
   </head>
   </head>
-  <body>
+<body>
+
+<section class="hero is-primary is-fullheight">
+  <div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" class="form-control shadow-sm" id="txtEmail" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control shadow-sm" id="txtPassword" name="password">
+    </div>
+
+      <button type="submit" class="btn btn-primary shadow" id="btnLogin">Login</button>
+      <button type="submit" class="btn btn-primary shadow" id="btnSignup">Signup</button>
+  </div>
 
 
-    <section class="hero">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <header class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item" href= "Index.html">
-                <img src="logo3.png"  alt="Logo">
-              </a>
-              <span class="navbar-burger" data-target="navbarMenuHeroC">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroC" class="navbar-menu">
-              <div class="navbar-end">
 
-                <button class = "navbar-item button is-ghost" id="switch" onclick="toggleTheme()">🌙</button>
-
-                <a class="navbar-item is-hoverable" href="workout/workout.html">
-                  <strong> Workouts </strong>
-                </a>
-                <a class="navbar-item" href="recipe/recipe.html">
-                  <Strong>Recipe</Strong>
-                </a>
-                
-                <div class="navbar-item has-dropdown is-hoverable"  >
-                  <a class="navbar-link" >
-                   <strong>More</strong> 
-                  </a>
-          
-                  <div class="navbar-dropdown" >
-                    <a class="navbar-item" style=" color: black;">
-                      About
-                    </a>
-                    <a class="navbar-item" style=" color: black;">
-                      Jobs
-                    </a>
-                    <a class="navbar-item" style=" color: black;">
-                      Contact
-                    </a>
-                    
-                  </div>
-                </div>
-
-
-                  <div class="navbar-end">
-                    <div class="navbar-item">
-                      <div class="buttons">
-                        <a class="button is-white" >
-                          <strong>Sign up</strong>
-                        </a>
-                        <a class="button is-white">
-                          <strong> Log in </strong>
-                        </a>
-                      </div>
-                    </div>
-
-
+  <!-- <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+          <form action="" class="box">
+            <div class="field">
+              <label for="" class="label email">Email</label>
+              <div class="control has-icons-left">
+                <input
+                  type="email"
+                  placeholder="e.g. bobsmith@gmail.com"
+                  class="input"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
               </div>
             </div>
-          </div>
-        </header>
+            <div class="field">
+              <label for="" class="label password">Password</label>
+              <div class="control has-icons-left">
+                <input
+                  type="password"
+                  placeholder="*******"
+                  class="input"
+                  required
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="" class="checkbox">
+                <input type="checkbox" />
+                Remember me
+              </label>
+            </div>
+            <div class="field-class">
+              <button class="button is-success signup">signup</button>
+            </div>
+
+
+          </form>
+        </div>
       </div>
-    
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-              
- 
+    </div>
+  </div> -->
+</section> 
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDqJV3PB3fDfYUsk8Q2HbnbvE7SoQs-DWE",
+    authDomain: "project-muscle-e3d84.firebaseapp.com",
+    projectId: "project-muscle-e3d84",
+    storageBucket: "project-muscle-e3d84.appspot.com",
+    messagingSenderId: "182910615574",
+    appId: "1:182910615574:web:5645114f6dde5674cd3537",
+    measurementId: "G-EKVRD04K2W"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+</body>
+
+  
 
 
 
-        
-      
-    
 
 
 
@@ -101,15 +122,7 @@
 
 
 
-      <!-- Hero footer: will stick at the bottom -->
-     
-    </section>
 
-    
 
-    
-  </body>
 
- 
 
-</html>

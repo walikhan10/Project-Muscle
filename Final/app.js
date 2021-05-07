@@ -55,20 +55,28 @@ fetch("https://type.fit/api/quotes")
         $("area").on("click", async (e) => {
           let muscle = e.target.id;
           await getExercise(muscle);
-
+          
         });        
 
 
         $("#search").on("click",  (e) => {
           e.preventDefault()
           exercise($('#searchTerm').val())
-          ///alert("hi")
-          
+        ///alert("hi")
+
         })
 
-     
+        $("area").on("click", async (e) => {
+          let muscle = e.target.id;
+          await getExercise(muscle);
+          
+        }); 
+      
+
+
       });
 
+     
 
 
       
@@ -93,10 +101,10 @@ fetch("https://type.fit/api/quotes")
          
          `
 
-
-  <article class="message is-dark">
-  <div class="message-header">
-    <p> ${data.results[i].name} </p>
+<br>
+  <article id = "card" class="message is-dark">
+  <div class="message-header" >
+    <p id = 'exercise_name'>  ${data.results[i].name} </p>
   </div>
   <div class="message-body">
   ${data.results[i].description}
@@ -111,34 +119,13 @@ fetch("https://type.fit/api/quotes")
 
 
 
-// let searchButton = document.querySelector('#square')
-
-// searchButton.addEventListener("click", ()=>{
-//   alert("hello")
-//   console.log("button pressed")
-//   sendApiRequest()
-// })
-
-
-//An asynchronous function to fetch data from the API.
-async function sendApiRequest(){
-  let response = await fetch(``);
-  console.log(response)
-}
-
-
-//function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
-function useApiData(data){
-
-}
-      
 
 function exercise(input) {
   var myHeaders = new Headers();
 myHeaders.append("x-app-id", "1889c865");
 myHeaders.append("x-app-key", "668fe1e1f50e5221f889d8e791685eea");
 myHeaders.append("Content-Type", "application/json");
-console.log(input)
+//console.log(input)
 var raw = JSON.stringify({
   "query": input
 });
@@ -155,15 +142,11 @@ fetch("https://trackapi.nutritionix.com/v2/natural/exercise", requestOptions)
   .then(result => {
     console.log(result.exercises[0].nf_calories)
 
-    document.getElementById('test2').textContent= result.exercises[0].nf_calories;
+    document.getElementById('test2').textContent= result.exercises[0].nf_calories + " kcal";
 
-   
 
 
   })
 
 }
-
-// exercise($('#searchTerm'))
-
 

@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Project Muscle</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="res.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="res.css" />
     <script src="app.js"></script>
-   
   </head>
-  
-  <body class= "all">
 
+  <body class="all">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <a href="../index.html">
+        <img src="../logo.png" width="200" id="logo" />
+      </a>
 
+      <div class="navbar-brand">
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <a href="../index.html">
-            <img src="../logo.png" width="200"  id = "logo">  
-          </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> My Workouts </a>
 
-        <div class="navbar-brand">
-          
-          
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-      
-            <a class="navbar-item">
-              My Workouts
-            </a>
+          <a href="recipe/recipe.html" class="navbar-item"> Recipe </a>
 
-            <a href="recipe/recipe.html" class="navbar-item">
-              Recipe
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
             <div class="navbar-dropdown">
-                <a class="navbar-item">
-                  About
-                </a>
-                
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                
-              </div>
-            </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-dark">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
+              <a class="navbar-item"> About </a>
+
+              <a class="navbar-item"> Contact </a>
+              <hr class="navbar-divider" />
             </div>
           </div>
         </div>
-      </nav>
 
-      <section>
-        <!-- <div class="bg-video">
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-dark">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light"> Log in </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <!-- <div class="bg-video">
             <video class="bg-video__content" autoplay muted loop>
                 <source src="img/video.mp4" type="video/mp4">
                 <source src="img/video.webm" type="video/webm">
@@ -83,15 +72,22 @@
             </video>
         </div> -->
 
-        <div class="container initial">
-            <h1 class="brand"> RECIPES</h1>
-            <form>
-                <input type="text" placeholder="Search Your Recipe">
-                <ion-icon class="icon" name="search-outline"></ion-icon>
-            </form>
+      <div class="container initial">
+        <h1 class="brand">RECIPES</h1>
+        <form>
+          <div id="search-class">
+            <input
+              class="form-control typeahead"
+              id="foodList"
+              type="text"
+              placeholder="Search Your Recipe"
+            />
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+          </div>
+        </form>
 
-            <div class="search-result">
-                <!-- 
+        <div class="search-result">
+          <!-- 
                    <div class="item">
                     <img src="/img/img-1.jpg" alt="img-1">
                     <div class="flex-container">
@@ -101,35 +97,10 @@
                     <p class="item-data">Calories : 120</p>
                 </div>
                  -->
-
-            </div>
-
-
         </div>
-
-        
+      </div>
     </section>
 
-
-
-
-
-
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="main.js"></script>
-      
-
-
-     
-
-    
-
-  
-
-
-
   </body>
-
- 
-
 </html>

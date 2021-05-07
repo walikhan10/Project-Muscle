@@ -16,13 +16,16 @@
   <body>
 
 
+    
+
+
     <section class="hero">
       <!-- Hero head: will stick at the top -->
       <div class="hero-head">
         <header class="navbar">
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item" href= "Index.html">
+              <a class="navbar-item" href="index.html">
                 <img src="logo3.png"  alt="Logo">
               </a>
               <span class="navbar-burger" data-target="navbarMenuHeroC">
@@ -36,8 +39,8 @@
 
                 <button class = "navbar-item button is-ghost" id="switch" onclick="toggleTheme()">🌙</button>
 
-                <a class="navbar-item is-hoverable" href="workout/workout.html">
-                  <strong> Workouts </strong>
+                <a class="navbar-item is-hoverable" href="Calorie.html">
+                  <strong> Calorie Counter </strong>
                 </a>
                 <a class="navbar-item" href="recipe/recipe.html">
                   <Strong>Recipe</Strong>
@@ -49,7 +52,7 @@
                   </a>
           
                   <div class="navbar-dropdown" >
-                    <a class="navbar-item"  id = "about" style=" color: black;">
+                    <a class="navbar-item" style=" color: black;">
                       About
                     </a>
                     <a class="navbar-item" style=" color: black;">
@@ -81,28 +84,29 @@
           </div>
         </header>
       </div>
-
     
       <!-- Hero content: will be in the middle -->
-      
-      <div class="square">
+      <div class="hero-body1">
+  
+          <!-- <div class="container has-text-centered"> -->
+        <div class="square">
         <input 
         id="searchTerm" 
         type="text" 
-        placeholder="Enter search term" />
+        placeholder="Enter your workout: Example &#10 -ran 3 miles" />
         
-        <button type = "submit" id="search"> Search </button>
+        <button class = "button is-rounded" type = "submit" id="search"> Search </button>
         
 
       </div>
         
        
 
-      
+      <h1 class = "calorie-intro">Enter your Workout to see the Calories Burned!</h1>
       
       <div class="square2" >
-
-      <div class = "has-text-centered" id= "test2">result: </div>
+          
+      <div class = "has-text-centered" id= "test2">Estimated Calories Burned: </div>
 
       </div>
 
@@ -110,7 +114,7 @@
  
 
 
-
+    
         
       
     
