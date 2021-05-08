@@ -212,3 +212,36 @@ function recipe() {
 }
 
 
+
+
+$(function () {
+  var availableTags = [
+    "walk 30 mins",
+    "walk 40 mins",
+    "walk 50 mins",
+    "walk 60 mins",
+    "yoga 30 mins",
+    "yoga 40 mins",
+    "ran 30 mins",
+    "ran 40 mins",
+    "ran 50 mins",
+    "Biked for 30 mins",
+    "Biked for 40 mins",
+    "Biked for 50 mins",
+    "Biked for 60 mins",
+
+
+
+
+  ];
+  $("#searchTerm").autocomplete({
+    source: availableTags
+  });
+});
+
+
+
+
+
+
+

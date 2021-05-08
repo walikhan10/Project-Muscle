@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="res.css" />
     <title>Word Guess Game</title>
   </head>
@@ -12,8 +17,10 @@
   <body>
     <header>
       <h1>WORD GUESS GAME</h1>
-      <span id="gentag">BEACH THEME</span>
+
+      <a id="gentag" href="../index.html">Project Muscle</a>
     </header>
+
     <body>
       <div class="sectionwrapper">
         <section class="leftside">
@@ -22,16 +29,18 @@
           </div>
         </section>
         <section class="rightside">
-          <div class="keytostart">PRESS ANY KEY TO START!</div>
-          <div class="winsP">WINS: <span class="winscount">0</span></div>
-          <div id="wordWrap">
-            <!--divs to creat underlines-->
-            <div class="underline"></div>
+          <div class="start">
+            <div class="keytostart">PRESS ANY KEY TO START!</div>
+            <div class="winsP">WINS: <span class="winscount">0</span></div>
+            <div id="wordWrap">
+              <!--divs to creat underlines-->
+              <div class="underline"></div>
+            </div>
+            <div class="guessremainingP">NUMBER OF GUESSES REMAINING</div>
+            <div><span id="guessremainingNum">15</span></div>
+            <div class="GuessedLetters">LETTERS ALREADY GUESSED</div>
+            <div class="guessedlettersdiv"></div>
           </div>
-          <div class="guessremainingP">NUMBER OF GUESSES REMAINING</div>
-          <div><span id="guessremainingNum">15</span></div>
-          <div class="GuessedLetters">LETTERS ALREADY GUESSED</div>
-          <div class="guessedlettersdiv"></div>
         </section>
       </div>
       <!--closing right side section-->

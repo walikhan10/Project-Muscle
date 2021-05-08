@@ -1,4 +1,4 @@
-var words = ["lowtide", "clam", "coral", "boat", "coast", "hermit", "fish"];
+var words = ["jumping", "spinach", "protien", "run", "water", "weights", "fruit"];
 //random string from array
 const randomNum = () => {
     return Math.floor(Math.random() * words.length);
@@ -43,31 +43,31 @@ function generateUnderscore() {
 function newPicture() {
     if (chosenWord === words[0]) {
         var img = document.createElement("img");
-        img.src = "images/lowtide.jpg";
+        img.src = "images/jumping-jack.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[1]) {
         var img = document.createElement("img");
-        img.src = "images/clam.jpg";
+        img.src = "images/spinach.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[2]) {
         var img = document.createElement("img");
-        img.src = "images/coral.jpg";
+        img.src = "images/protien.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[3]) {
         var img = document.createElement("img");
-        img.src = "images/boat.jpg";
+        img.src = "images/running.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[4]) {
         var img = document.createElement("img");
-        img.src = "images/coast.jpg";
+        img.src = "images/water.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[5]) {
         var img = document.createElement("img");
-        img.src = "images/hermit.jpg";
+        img.src = "images/weights.jpg";
         imgDiv.appendChild(img);
     } else if (chosenWord === words[6]) {
         var img = document.createElement("img");
-        img.src = "images/fish.jpg";
+        img.src = "images/fruit.jpg";
         imgDiv.appendChild(img);
     }
 }
@@ -104,3 +104,5 @@ document.addEventListener("keyup", function () {
 });
 
 resetFunc();
+
+

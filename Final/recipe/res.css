@@ -1,39 +1,43 @@
-@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Mansalva";
   box-sizing: border-box;
 }
 
 body {
-  background-color: #25272e;
+  background-color: #097969;
   color: white;
 }
 
 header {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 36px;
-  padding: 20px;
-  background-color: white;
-  color: black;
+  padding: px;
+  color: white;
   transition: 0.5s ease 0.5s;
   max-width: 1080px;
+  height: 130px;
   margin: 0 auto;
 }
 
 .sectionwrapper {
-  margin: 50px auto;
+  margin: 100px auto;
   border: 3px solid white;
-  width: 700px;
+  width: 900px;
   border-radius: 4px;
   position: relative;
+  text-align: right;
   height: 525px;
+  font-family: "BlinkMacSystemFont";
 }
 
 img {
-  height: 519px;
+  height: 550px;
   width: 694px;
+  position: relative;
+  right: 100px;
+  bottom: 15px;
 }
 
 .leftside {
@@ -41,7 +45,7 @@ img {
   left: 0;
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 20%;
   transition: 0.5s ease 0.5s;
 }
 
@@ -50,7 +54,7 @@ img {
   right: 0;
   position: absolute;
   height: 100%;
-  width: 50%;
+  width: 70%;
   text-align: center;
   transition: 0.5s ease 0.5s;
 }
@@ -79,4 +83,9 @@ img {
 .guessedlettersdiv {
   padding: 65px;
   text-align: center;
+}
+
+.start {
+  position: relative;
+  left: 25%;
 }
