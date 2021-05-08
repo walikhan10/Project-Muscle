@@ -15,7 +15,7 @@ let docUnderScore = document.getElementsByClassName("underline");
 let docGuess = document.getElementsByClassName("guessedlettersdiv");
 let wins = 0;
 let winsCount = document.getElementsByClassName("winscount");
-let guessremainingNum = 15;
+let guessremainingNum = 5;
 let guessremainingNumSpan = document.getElementById("guessremainingNum");
 let imgDiv = document.getElementById("imgdivid");
 
@@ -24,7 +24,7 @@ function resetFunc() {
     chosenWord = words[randomNum()];
     imgDiv.removeChild(imgDiv.childNodes[2]);
     newPicture();
-    guessremainingNum = 15;
+    guessremainingNum = 5;
     guessremainingNumSpan.innerHTML = guessremainingNum;
     rightWordArray = [];
     wrongWordArray = [];
