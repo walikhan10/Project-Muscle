@@ -221,6 +221,12 @@ $(function () {
     "ran",
     "Biked",
     "Stretch",
+    "run",
+    "30 min",
+    "swim",
+    "swam",
+    "slept",
+    "sleep"
 
 
 
