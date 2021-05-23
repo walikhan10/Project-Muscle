@@ -4,6 +4,8 @@
 
 ![Project-Muscle-logo](https://user-images.githubusercontent.com/52141738/117586182-8bd5aa80-b0e4-11eb-9dd2-2045befe0c1a.png)
 
+https://walikhan10.github.io/Project-Muscle/
+
 **Project Muscle** is an application that **combines exercise and fitness** into one app! It does this by
 - Displaying exercises based on part of the body chosen
 - Creating a calorie counter that shows how many calories burned based on the workout
